@@ -8,11 +8,13 @@ import fer.rassus.lab1.client.service.response.CreateSensorDataResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.*;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.*;
 
+@Service
 public class ClientServiceImpl implements ClientService {
 
     private final ServerUrls serverUrls;
@@ -29,17 +31,23 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
-    public CreateRegistrationResponse register(CreateRegistrationRequest createRegistrationRequest) {
+    public long register(CreateRegistrationRequest createRegistrationRequest) {
         final ResponseEntity<CreateRegistrationResponse> response = restTemplate
                 .postForEntity(serverUrls.getRegisterUrl(), createRegistrationRequest,
                         CreateRegistrationResponse.class);
-        return Objects.requireNonNull(response.getBody());
+        return getIdFromUrl(response.getHeaders().getLocation().getPath());
     }
 
     @Override
-    public String neighbour(String id) {
-        final String path = String.format(serverUrls.getRegisterUrl(), id);
-        return sendGetRequestToServer(path, Collections.emptyMap(), id, String.class);
+    public Optional<CreateRegistrationRequest> getNeighbour(String id) {
+        final String path = String.format(serverUrls.getNeighbourUrl(), id);
+        final ResponseEntity<CreateRegistrationRequest> response = restTemplate.getForEntity(path, CreateRegistrationRequest.class);
+
+        if (Objects.equals(response.getStatusCode(), HttpStatus.NO_CONTENT)) {
+            return Optional.empty();
+        }
+
+        return Optional.of(response.getBody());
     }
 
     @Override
@@ -51,23 +59,10 @@ public class ClientServiceImpl implements ClientService {
         return Objects.requireNonNull(response.getBody());
     }
 
-    private <T> T sendGetRequestToServer(String url, Map<String, String> queryParams, String username,
-                                         Class<T> castClass) {
-        final HttpHeaders headers = createHeaders(username);
-        final HttpEntity<String> entity = new HttpEntity<>(headers);
-
-        final UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url);
-        queryParams.forEach(builder::queryParam);
-        final ResponseEntity<T> response =
-                restTemplate.exchange(builder.toUriString(), HttpMethod.GET, entity, castClass);
-        return response.getBody();
-    }
-
-    private static HttpHeaders createHeaders(String username) {
-        final HttpHeaders headers = new HttpHeaders();
-        headers.set("Internal-Username", username);
-
-        return headers;
+    private long getIdFromUrl(String url) {
+        String[] splited = url.split("/");
+        String idString = splited[splited.length - 1];
+        return Long.parseLong(idString);
     }
 
 

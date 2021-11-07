@@ -20,30 +20,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eab3fd4-648d-47cd-952e-45c72c01afbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/dto/CreateRegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/dto/CreateSensorDataRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/util/CreateRegistrationGeneratingUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/ClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/NeighbourSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/NeighbourSensor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/impl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/impl/ClientServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/impl/ServerUrls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/impl/ServerUrls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/response/CreateRegistrationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/response/CreateRegistrationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/controller/SensorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/controller/SensorController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/service/SensorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/service/SensorService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/service/impl/SensorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/service/impl/SensorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/resources/main/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/controller/SensorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/controller/SensorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/service/SensorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/service/SensorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/service/impl/SensorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/service/impl/SensorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +116,7 @@
       <recent name="fer.rassus.lab1.client" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fer.rassus.lab1.client.util" />
       <recent name="fer.rassus.lab1.client" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -222,7 +229,8 @@
       <workItem from="1636302493543" duration="618000" />
       <workItem from="1636303123813" duration="1754000" />
       <workItem from="1636305373198" duration="233000" />
-      <workItem from="1636305749122" duration="2852000" />
+      <workItem from="1636305749122" duration="3544000" />
+      <workItem from="1636309312830" duration="3627000" />
     </task>
     <servers />
   </component>
@@ -234,7 +242,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -245,10 +259,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1636308249634">
+    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1636311899715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636308249634" />
+    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636311899715" />
+    <state x="643" y="254" width="624" height="530" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1636309330311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="643" y="254" width="624" height="530" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636309330311" />
     <state x="669" y="383" width="582" height="280" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1636300613153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -261,42 +279,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="735" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1636307475447" />
-    <state width="1870" height="671" key="GridCell.Tab.0.bottom" timestamp="1636307300328">
+    <state width="1870" height="508" key="GridCell.Tab.0.bottom" timestamp="1636313334196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="671" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300328" />
-    <state width="1870" height="671" key="GridCell.Tab.0.center" timestamp="1636307300326">
+    <state width="1870" height="508" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636313334196" />
+    <state width="1870" height="508" key="GridCell.Tab.0.center" timestamp="1636313334196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="671" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300326" />
-    <state width="1870" height="671" key="GridCell.Tab.0.left" timestamp="1636307300324">
+    <state width="1870" height="508" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636313334196" />
+    <state width="1870" height="508" key="GridCell.Tab.0.left" timestamp="1636313334196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="671" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300324" />
-    <state width="1870" height="671" key="GridCell.Tab.0.right" timestamp="1636307300327">
+    <state width="1870" height="508" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636313334196" />
+    <state width="1870" height="508" key="GridCell.Tab.0.right" timestamp="1636313334196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="671" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300327" />
-    <state width="1870" height="671" key="GridCell.Tab.1.bottom" timestamp="1636307300330">
+    <state width="1870" height="508" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636313334196" />
+    <state width="1870" height="508" key="GridCell.Tab.1.bottom" timestamp="1636313334196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="671" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300330" />
-    <state width="1870" height="671" key="GridCell.Tab.1.center" timestamp="1636307300329">
+    <state width="1870" height="508" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636313334196" />
+    <state width="1870" height="508" key="GridCell.Tab.1.center" timestamp="1636313334196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="671" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300329" />
-    <state width="1870" height="671" key="GridCell.Tab.1.left" timestamp="1636307300328">
+    <state width="1870" height="508" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636313334196" />
+    <state width="1870" height="508" key="GridCell.Tab.1.left" timestamp="1636313334196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="671" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300328" />
-    <state width="1870" height="671" key="GridCell.Tab.1.right" timestamp="1636307300330">
+    <state width="1870" height="508" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636313334196" />
+    <state width="1870" height="508" key="GridCell.Tab.1.right" timestamp="1636313334196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="671" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300330" />
-    <state x="634" y="236" width="739" height="566" key="find.popup" timestamp="1636307417766">
+    <state width="1870" height="508" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636313334196" />
+    <state x="634" y="236" width="739" height="566" key="find.popup" timestamp="1636309204362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="634" y="236" width="739" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636307417766" />
+    <state x="634" y="236" width="739" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636309204362" />
     <state x="624" y="236" width="672" height="677" key="run.anything.popup" timestamp="1636303183012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

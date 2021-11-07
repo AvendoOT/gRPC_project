@@ -2,14 +2,15 @@ package fer.rassus.lab1.client.service;
 
 import fer.rassus.lab1.client.service.request.CreateRegistrationRequest;
 import fer.rassus.lab1.client.service.request.CreateSensorDataRequest;
-import fer.rassus.lab1.client.service.response.CreateRegistrationResponse;
 import fer.rassus.lab1.client.service.response.CreateSensorDataResponse;
+
+import java.util.Optional;
 
 public interface ClientService {
 
-    CreateRegistrationResponse register(CreateRegistrationRequest createRegistrationRequest);
+    long register(CreateRegistrationRequest createRegistrationRequest);
 
-    String neighbour(String id);
+    Optional<CreateRegistrationRequest> getNeighbour(String id);
 
     CreateSensorDataResponse saveSensorData(String id, CreateSensorDataRequest createSensorDataRequest);
 }

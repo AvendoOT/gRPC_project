@@ -4,5 +4,6 @@ server:
 
 rassus:
   server:
-    url: ${RASSUS_SERVER_URL:http://localhost:9000/}
+    url: "http://localhost:9000/"
+    url-path: 9000
     path: "/home/leon/Documents/fer/diplomski/1_semestar/RASSUS/lab/project/gRPC_project/client/src/main/resources/readings.csv"
