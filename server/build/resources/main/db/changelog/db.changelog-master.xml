@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" logicalFilePath="db.changelog-master.xml"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="sensor_table_2021.11.05-00" author="lkranjcevic">
+        <createSequence sequenceName="sensor_id_sequence" startValue="1" incrementBy="1" />
+        <createTable tableName="sensor">
+            <column name="id" type="BIGINT" defaultValueSequenceNext="sensor_id_sequence">
+                <constraints primaryKey="true" primaryKeyName="pk_sensor" nullable="false" />
+            </column>
+            <column name="latitude" type="DOUBLE" />
+            <column name="longitude" type="DOUBLE" />
+            <column name="ip" type="TEXT" />
+            <column name="port" type="INT" />
+        </createTable>
+    </changeSet>
+
+    <changeSet id="sensor_reading_table_2021.11.05-00" author="lkranjcevic">
+        <createSequence sequenceName="sensor_reading_id_sequence" startValue="1" incrementBy="1" />
+        <createTable tableName="sensor_reading">
+            <column name="id" type="BIGINT" defaultValueSequenceNext="sensor_reading_id_sequence">
+                <constraints primaryKey="true" primaryKeyName="pk_sensor_reading" nullable="false" />
+            </column>
+            <column name="temperature" type="DOUBLE" />
+            <column name="pressure" type="DOUBLE" />
+            <column name="humidity" type="DOUBLE" />
+            <column name="co" type="DOUBLE" />
+            <column name="no2" type="DOUBLE" />
+            <column name="so2" type="DOUBLE" />
+            <column name="sensor_id" type="BIGINT">
+                <constraints foreignKeyName="sensor_reading_sensor_fk" referencedTableName="sensor" referencedColumnNames="id" nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

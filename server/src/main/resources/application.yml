@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  host-name: localhost
+
+spring:
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+
+  jpa:
+    hibernate:
+    ddl-auto: none
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: username
+    password: password
+    url: jdbc:h2:mem:testdb
+
+  h2:
+    console:
+    enabled: true

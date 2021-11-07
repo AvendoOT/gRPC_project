@@ -1,0 +1,73 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.6'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'com.google.protobuf' version '0.8.17'
+    id 'java'
+}
+
+group = 'fer.rassus.lab1'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    //################ GRPC ################
+    implementation 'io.grpc:grpc-netty-shaded:1.41.0'
+    implementation 'io.grpc:grpc-protobuf:1.41.0'
+    implementation 'io.grpc:grpc-stub:1.41.0'
+    //################ GRPC ################
+
+}
+
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'build/generated/source/proto/main/grpc'
+            srcDirs 'build/generated/source/proto/main/java'
+        }
+    }
+}
+
+//################ GRPC ################
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.17.3"
+    }
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.41.0'
+        }
+    }
+    generateProtoTasks {
+        all()*.plugins {
+            grpc {}
+        }
+        all().each {
+            it.group = 'build'
+        }
+    }
+}
+//################ GRPC ################
+task runExampleClient(type: JavaExec) {
+    group = "exec"
+    description = "Run client with JavaExecTask"
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = "hr.fer.tel.rassus.examples.SimpleUnaryRPCClient"
+    standardInput = System.in
+
+}
+
+task runExampleServer(type: JavaExec) {
+    group = "exec"
+    description = "Run client with JavaExecTask"
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = "hr.fer.tel.rassus.examples.SimpleUnaryRPCServer"
+}
