@@ -1,16 +1,26 @@
 package fer.rassus.lab1.client;
 
-import io.grpc.Server;
-import io.grpc.ServerBuilder;
+import fer.rassus.lab1.client.grpc.SensorReadingServer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.io.IOException;
 
+@EnableScheduling
 @SpringBootApplication
 public class ClientApplication {
+
+    private final SensorReadingServer server;
+
+    @Autowired
+    public ClientApplication(SensorReadingServer server) {
+        this.server = server;
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(ClientApplication.class, args);
@@ -18,12 +28,8 @@ public class ClientApplication {
 
     @EventListener(ApplicationReadyEvent.class)
     public void startServer() throws IOException, InterruptedException {
-//        Server server = ServerBuilder
-//                .forPort(8090)
-//                .addService(new GRpcServerServiceImpl()).build();
-//
-//        server.start();
-//        server.awaitTermination();
+        server.start();
+        server.blockUntilShutdown();
     }
 
 }

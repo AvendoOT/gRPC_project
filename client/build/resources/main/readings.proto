@@ -3,14 +3,17 @@ syntax = "proto3";
 option java_multiple_files = true;
 option java_package = "fer.rassus.lab1.client";
 
-package fer.rassus.lab1;
+package fer.rassus.lab1.client;
 
-service SensorReading {
-    // Sends a greeting
-    rpc SensorRequestMessageReading (SensorReadingMessageResponse) returns (SensorReadingMessageResponse) {}
+service SensorReadingService {
+    rpc RequestSensorReading (SensorReadingRequest) returns (SensorReadingResponse) {}
 }
 
-message SensorReadingMessageResponse {
+message SensorReadingRequest {
+
+}
+
+message SensorReadingResponse {
     float temperature = 1;
     float pressure = 2;
     float humidity = 3;

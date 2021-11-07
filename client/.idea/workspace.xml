@@ -20,168 +20,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eab3fd4-648d-47cd-952e-45c72c01afbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/grpc/SensorClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/grpc/SensorReadingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/scheduled/GenerateReadingsScheduledService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/NeighbourSensor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/SensorReadingFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/SensorRequestReadingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/readings.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/bootJarMainClassName" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/ClientApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/Readings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/Readings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$MethodHandlers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingBaseDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingBlockingStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingFileDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingFutureStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingImplBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingMethodDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/properties/ServerProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/service/ClientService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/service/impl/ClientServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/service/impl/ServerUrls.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/service/request/CreateRegistrationRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/service/request/CreateSensorDataRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/service/response/CreateRegistrationResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/service/response/CreateSensorDataResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/annotations.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/auth.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/backend.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/billing.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/client.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/config_change.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/consumer.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/control.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/distribution.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/documentation.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/endpoint.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/field_behavior.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/http.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/httpbody.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/label.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/launch_stage.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/log.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/logging.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/metric.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/monitored_resource.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/monitoring.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/quota.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/resource.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/service.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/source_info.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/system_parameter.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/api/usage.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/cloud/audit/audit_log.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/geo/type/viewport.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/logging/type/http_request.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/logging/type/log_severity.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/longrunning/operations.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/any.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/api.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/compiler/plugin.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/descriptor.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/duration.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/empty.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/field_mask.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/source_context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/struct.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/timestamp.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/type.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/protobuf/wrappers.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/rpc/code.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/rpc/context/attribute_context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/rpc/error_details.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/rpc/status.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/calendar_period.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/color.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/date.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/datetime.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/dayofweek.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/expr.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/fraction.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/latlng.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/money.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/postal_address.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/quaternion.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/main/google/type/timeofday.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/annotations.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/auth.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/backend.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/billing.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/client.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/config_change.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/consumer.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/control.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/distribution.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/documentation.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/endpoint.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/field_behavior.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/http.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/httpbody.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/label.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/launch_stage.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/log.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/logging.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/metric.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/monitored_resource.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/monitoring.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/quota.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/resource.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/service.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/source_info.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/system_parameter.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/api/usage.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/cloud/audit/audit_log.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/geo/type/viewport.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/logging/type/http_request.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/logging/type/log_severity.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/longrunning/operations.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/any.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/api.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/compiler/plugin.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/descriptor.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/duration.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/empty.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/field_mask.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/source_context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/struct.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/timestamp.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/type.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/protobuf/wrappers.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/rpc/code.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/rpc/context/attribute_context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/rpc/error_details.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/rpc/status.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/calendar_period.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/color.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/date.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/datetime.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/dayofweek.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/expr.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/fraction.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/latlng.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/money.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/postal_address.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/quaternion.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/google/type/timeofday.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$MethodHandlers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingBlockingStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingFutureStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingImplBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/readings.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/test/readings.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/grpc/fer/rassus/lab1/client/SensorReadingGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/source/proto/main/grpc/fer/rassus/lab1/client/SensorReadingGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/grpc/fer/rassus/lab1/client/SensorReadingGrpc.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/Readings.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/Readings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/readings.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/readings.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/ClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/grpc/SensorReadingServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/properties/ServerProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/properties/ServerProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/ReceiveService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/impl/ServerUrls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/impl/ServerUrls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/request/CreateRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/request/CreateRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/readings.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/readings.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -227,11 +104,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../grga/rassus-webclient-grpc-ela" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -241,10 +122,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fer.rassus.lab1.client" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="fer.rassus.lab1.client" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client" />
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
@@ -254,13 +141,13 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Spring Boot.ClientApplication">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fer.rassus.lab1.client.service.Client" />
+      <option name="MAIN_CLASS_NAME" value="fer.rassus.lab1.client.Client" />
       <module name="client.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fer.rassus.lab1.client.service.*" />
+          <option name="PATTERN" value="fer.rassus.lab1.client.scheduled.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -273,7 +160,7 @@
       <module name="client.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fer.rassus.lab1.client.*" />
+          <option name="PATTERN" value="fer.rassus.lab1.client.scheduled.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -347,7 +234,11 @@
       <updated>1636286630994</updated>
       <workItem from="1636286634302" duration="2302000" />
       <workItem from="1636289081488" duration="9424000" />
-      <workItem from="1636300502515" duration="61000" />
+      <workItem from="1636300502515" duration="1935000" />
+      <workItem from="1636302493543" duration="618000" />
+      <workItem from="1636303123813" duration="1754000" />
+      <workItem from="1636305373198" duration="233000" />
+      <workItem from="1636305749122" duration="1552000" />
     </task>
     <servers />
   </component>
@@ -370,57 +261,61 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1636299939264">
+    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1636307205697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636299939264" />
+    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636307205697" />
+    <state x="669" y="383" width="582" height="280" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1636300613153">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="383" width="582" height="280" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1636300613153" />
     <state x="693" y="267" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1636293141543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="693" y="267" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636293141543" />
-    <state x="735" y="277" key="FileChooserDialogImpl" timestamp="1636299451705">
+    <state x="735" y="277" key="FileChooserDialogImpl" timestamp="1636301987537">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="735" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1636299451705" />
-    <state width="1870" height="410" key="GridCell.Tab.0.bottom" timestamp="1636300482270">
+    <state x="735" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1636301987537" />
+    <state width="1870" height="671" key="GridCell.Tab.0.bottom" timestamp="1636307300328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="410" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636300482270" />
-    <state width="1870" height="410" key="GridCell.Tab.0.center" timestamp="1636300482270">
+    <state width="1870" height="671" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300328" />
+    <state width="1870" height="671" key="GridCell.Tab.0.center" timestamp="1636307300326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="410" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636300482270" />
-    <state width="1870" height="410" key="GridCell.Tab.0.left" timestamp="1636300482269">
+    <state width="1870" height="671" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300326" />
+    <state width="1870" height="671" key="GridCell.Tab.0.left" timestamp="1636307300324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="410" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636300482269" />
-    <state width="1870" height="410" key="GridCell.Tab.0.right" timestamp="1636300482270">
+    <state width="1870" height="671" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300324" />
+    <state width="1870" height="671" key="GridCell.Tab.0.right" timestamp="1636307300327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="410" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636300482270" />
-    <state width="1870" height="336" key="GridCell.Tab.1.bottom" timestamp="1636286898222">
+    <state width="1870" height="671" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300327" />
+    <state width="1870" height="671" key="GridCell.Tab.1.bottom" timestamp="1636307300330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="336" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636286898222" />
-    <state width="1870" height="336" key="GridCell.Tab.1.center" timestamp="1636286898221">
+    <state width="1870" height="671" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300330" />
+    <state width="1870" height="671" key="GridCell.Tab.1.center" timestamp="1636307300329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="336" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636286898221" />
-    <state width="1870" height="336" key="GridCell.Tab.1.left" timestamp="1636286898221">
+    <state width="1870" height="671" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300329" />
+    <state width="1870" height="671" key="GridCell.Tab.1.left" timestamp="1636307300328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="336" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636286898221" />
-    <state width="1870" height="336" key="GridCell.Tab.1.right" timestamp="1636286898222">
+    <state width="1870" height="671" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300328" />
+    <state width="1870" height="671" key="GridCell.Tab.1.right" timestamp="1636307300330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="336" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636286898222" />
-    <state x="634" y="236" width="652" height="566" key="find.popup" timestamp="1636300456772">
+    <state width="1870" height="671" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300330" />
+    <state x="634" y="236" width="739" height="566" key="find.popup" timestamp="1636306599922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="634" y="236" width="652" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636300456772" />
-    <state x="624" y="236" width="672" height="677" key="run.anything.popup" timestamp="1636300144172">
+    <state x="634" y="236" width="739" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636306599922" />
+    <state x="624" y="236" width="672" height="677" key="run.anything.popup" timestamp="1636303183012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="624" y="236" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636300144172" />
+    <state x="624" y="236" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636303183012" />
   </component>
 </project>

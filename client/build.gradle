@@ -5,27 +5,22 @@ plugins {
     id 'java'
 }
 
-group = 'fer.rassus.lab1'
+group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
-
 
 repositories {
     mavenCentral()
 }
 
-
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-
-    //################ GRPC ################
+    implementation 'org.springframework.boot:spring-boot-starter'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'io.grpc:grpc-netty-shaded:1.41.0'
     implementation 'io.grpc:grpc-protobuf:1.41.0'
     implementation 'io.grpc:grpc-stub:1.41.0'
-    //################ GRPC ################
-
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 }
-
 
 sourceSets {
     main {
@@ -36,7 +31,6 @@ sourceSets {
     }
 }
 
-//################ GRPC ################
 protobuf {
     protoc {
         artifact = "com.google.protobuf:protoc:3.17.3"
@@ -55,19 +49,7 @@ protobuf {
         }
     }
 }
-//################ GRPC ################
-task runExampleClient(type: JavaExec) {
-    group = "exec"
-    description = "Run client with JavaExecTask"
-    classpath = sourceSets.main.runtimeClasspath
-    mainClass = "fer.rassus.lab1.client.Client"
-    standardInput = System.in
 
-}
-
-task runExampleServer(type: JavaExec) {
-    group = "exec"
-    description = "Run client with JavaExecTask"
-    classpath = sourceSets.main.runtimeClasspath
-    mainClass = "fer.rassus.lab1.client.Server"
+test {
+    useJUnitPlatform()
 }
