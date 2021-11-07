@@ -6,4 +6,6 @@ import fer.rassus.lab1.client.service.response.CreateRegistrationResponse;
 public interface ClientService {
 
     CreateRegistrationResponse register(CreateRegistrationRequest createRegistrationRequest);
+
+    String neighbour(String id);
 }

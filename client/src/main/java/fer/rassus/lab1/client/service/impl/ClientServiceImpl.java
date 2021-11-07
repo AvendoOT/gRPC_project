@@ -5,14 +5,11 @@ import fer.rassus.lab1.client.service.request.CreateRegistrationRequest;
 import fer.rassus.lab1.client.service.response.CreateRegistrationResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.http.MediaType;
+import org.springframework.web.util.UriComponentsBuilder;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class ClientServiceImpl implements ClientService {
 
@@ -36,6 +33,33 @@ public class ClientServiceImpl implements ClientService {
                         CreateRegistrationResponse.class);
         return Objects.requireNonNull(response.getBody());
     }
+
+    @Override
+    public String neighbour(String id) {
+        return sendGetRequestToServer(serverUrls.getNeighbourUrl(), Collections.emptyMap(), id, String.class);
+    }
+
+    private <T> T sendGetRequestToServer(String url, Map<String, String> queryParams, String username,
+                                         Class<T> castClass) {
+        final HttpHeaders headers = createHeaders(username);
+        final HttpEntity<String> entity = new HttpEntity<>(headers);
+
+        final UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url);
+        queryParams.forEach(builder::queryParam);
+        final ResponseEntity<T> response =
+                restTemplate.exchange(builder.toUriString(), HttpMethod.GET, entity, castClass);
+        return response.getBody();
+    }
+
+    private static HttpHeaders createHeaders(String username) {
+        final HttpHeaders headers = new HttpHeaders();
+        headers.set("Internal-Username", username);
+
+        return headers;
+    }
+
+
+
 
 
 
