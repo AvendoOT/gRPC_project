@@ -20,62 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eab3fd4-648d-47cd-952e-45c72c01afbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/generated/source/proto/main/grpc/fer/rassus/lab1/client/SensorReadingGrpc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/Readings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/SensorReadingRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/SensorReadingRequestOrBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/SensorReadingResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/SensorReadingResponseOrBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/ReceiveService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/proto/readings.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/ClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/ClientApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/Registration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationRequest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationRequest$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationRequestOrBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationResponse$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationResponse$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationResponseOrBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$MethodHandlers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$RegistrationServiceBaseDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$RegistrationServiceBlockingStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$RegistrationServiceFileDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$RegistrationServiceFutureStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$RegistrationServiceImplBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$RegistrationServiceMethodDescriptorSupplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc$RegistrationServiceStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/RegistrationServiceGrpc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/registration.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/grpc/fer/rassus/lab1/client/RegistrationServiceGrpc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/Registration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/RegistrationRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/RegistrationRequestOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/RegistrationResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/RegistrationResponseOrBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/registration.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/ClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/GRpcServerServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/registration.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636286630994</updated>
       <workItem from="1636286634302" duration="2302000" />
-      <workItem from="1636289081488" duration="4312000" />
+      <workItem from="1636289081488" duration="4430000" />
     </task>
     <servers />
   </component>
