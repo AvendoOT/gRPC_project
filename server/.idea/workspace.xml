@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="148813b9-17a5-4ecb-8cf4-e8e3962e301c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../client/src/main/java/fer/rassus/lab1/client/service/request/CreateSensorDataRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/main/java/fer/rassus/lab1/client/service/response/CreateSensorDataResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/fer/rassus/lab1/client/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/fer/rassus/lab1/client/service/ClientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/main/java/fer/rassus/lab1/client/service/impl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/fer/rassus/lab1/client/service/impl/ClientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/main/java/fer/rassus/lab1/client/service/impl/ServerUrls.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/fer/rassus/lab1/client/service/impl/ServerUrls.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +215,7 @@
       <workItem from="1636242453563" duration="1317000" />
       <workItem from="1636244886553" duration="6960000" />
       <workItem from="1636284880406" duration="3910000" />
-      <workItem from="1636289088436" duration="971000" />
+      <workItem from="1636289088436" duration="1610000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,9 @@ package fer.rassus.lab1.client.service.impl;
 
 import fer.rassus.lab1.client.service.ClientService;
 import fer.rassus.lab1.client.service.request.CreateRegistrationRequest;
+import fer.rassus.lab1.client.service.request.CreateSensorDataRequest;
 import fer.rassus.lab1.client.service.response.CreateRegistrationResponse;
+import fer.rassus.lab1.client.service.response.CreateSensorDataResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.*;
@@ -37,6 +39,15 @@ public class ClientServiceImpl implements ClientService {
     @Override
     public String neighbour(String id) {
         return sendGetRequestToServer(serverUrls.getNeighbourUrl(), Collections.emptyMap(), id, String.class);
+    }
+
+    @Override
+    public CreateSensorDataResponse saveSensorData(String id, CreateSensorDataRequest createSensorDataRequest) {
+        final String path = String.format(serverUrls.getRegisterUrl(), id);
+        final ResponseEntity<CreateSensorDataResponse> response = restTemplate
+                .postForEntity(path, createSensorDataRequest,
+                        CreateSensorDataResponse.class);
+        return Objects.requireNonNull(response.getBody());
     }
 
     private <T> T sendGetRequestToServer(String url, Map<String, String> queryParams, String username,
