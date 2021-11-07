@@ -1,7 +1,0 @@
-server:
-  port: 8081
-  host-name: localhost
-
-rassus:
-  server:
-    url: ${RASSUS_SERVER_URL:http://localhost:8080/}
