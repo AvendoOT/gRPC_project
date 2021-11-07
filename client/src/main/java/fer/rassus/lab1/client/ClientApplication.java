@@ -18,12 +18,12 @@ public class ClientApplication {
 
     @EventListener(ApplicationReadyEvent.class)
     public void startServer() throws IOException, InterruptedException {
-        Server server = ServerBuilder
-                .forPort(8090)
-                .addService(new GRpcServerServiceImpl()).build();
-
-        server.start();
-        server.awaitTermination();
+//        Server server = ServerBuilder
+//                .forPort(8090)
+//                .addService(new GRpcServerServiceImpl()).build();
+//
+//        server.start();
+//        server.awaitTermination();
     }
 
 }
