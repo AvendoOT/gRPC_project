@@ -1,6 +1,5 @@
 package fer.rassus.lab1.client;
 
-import fer.rassus.lab1.client.service.Client;
 import fer.rassus.lab1.client.service.ReceiveService;
 import io.grpc.*;
 import org.springframework.beans.factory.annotation.Autowired;

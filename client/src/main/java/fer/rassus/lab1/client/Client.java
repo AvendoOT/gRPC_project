@@ -1,7 +1,5 @@
-package fer.rassus.lab1.client.service;
+package fer.rassus.lab1.client;
 
-import fer.rassus.lab1.client.SensorReadingGrpc;
-import fer.rassus.lab1.client.SensorReadingMessageResponse;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
