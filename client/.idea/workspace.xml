@@ -20,46 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eab3fd4-648d-47cd-952e-45c72c01afbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/grpc/SensorClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/grpc/SensorReadingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/scheduled/GenerateReadingsScheduledService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/NeighbourSensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/SensorReadingFileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/SensorRequestReadingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/readings.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/dto/CreateRegistrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/dto/CreateSensorDataRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/Readings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/Readings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$MethodHandlers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingBlockingStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingFutureStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingImplBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingStub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/readings.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/test/readings.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/grpc/fer/rassus/lab1/client/SensorReadingGrpc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/Readings.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/Readings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/readings.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/readings.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/Client.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/ClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/grpc/SensorReadingServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/properties/ServerProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/properties/ServerProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/ReceiveService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/impl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/impl/ClientServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/impl/ServerUrls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/impl/ServerUrls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/request/CreateRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/request/CreateRegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/readings.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/readings.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/controller/SensorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/controller/SensorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/service/SensorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/service/SensorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/service/impl/SensorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/service/impl/SensorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/controller/SensorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/controller/SensorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/service/SensorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/service/SensorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/service/impl/SensorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/fer/rassus/lab1/server/service/impl/SensorServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +96,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../server" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -238,7 +222,7 @@
       <workItem from="1636302493543" duration="618000" />
       <workItem from="1636303123813" duration="1754000" />
       <workItem from="1636305373198" duration="233000" />
-      <workItem from="1636305749122" duration="1552000" />
+      <workItem from="1636305749122" duration="2852000" />
     </task>
     <servers />
   </component>
@@ -261,10 +245,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1636307205697">
+    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1636308249634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636307205697" />
+    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636308249634" />
     <state x="669" y="383" width="582" height="280" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1636300613153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,10 +257,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="693" y="267" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636293141543" />
-    <state x="735" y="277" key="FileChooserDialogImpl" timestamp="1636301987537">
+    <state x="735" y="277" key="FileChooserDialogImpl" timestamp="1636307475447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="735" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1636301987537" />
+    <state x="735" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1636307475447" />
     <state width="1870" height="671" key="GridCell.Tab.0.bottom" timestamp="1636307300328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -309,10 +293,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1870" height="671" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636307300330" />
-    <state x="634" y="236" width="739" height="566" key="find.popup" timestamp="1636306599922">
+    <state x="634" y="236" width="739" height="566" key="find.popup" timestamp="1636307417766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="634" y="236" width="739" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636306599922" />
+    <state x="634" y="236" width="739" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636307417766" />
     <state x="624" y="236" width="672" height="677" key="run.anything.popup" timestamp="1636303183012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

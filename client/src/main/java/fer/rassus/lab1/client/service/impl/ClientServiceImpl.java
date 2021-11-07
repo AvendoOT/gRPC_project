@@ -38,12 +38,13 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public String neighbour(String id) {
-        return sendGetRequestToServer(serverUrls.getNeighbourUrl(), Collections.emptyMap(), id, String.class);
+        final String path = String.format(serverUrls.getRegisterUrl(), id);
+        return sendGetRequestToServer(path, Collections.emptyMap(), id, String.class);
     }
 
     @Override
     public CreateSensorDataResponse saveSensorData(String id, CreateSensorDataRequest createSensorDataRequest) {
-        final String path = String.format(serverUrls.getRegisterUrl(), id);
+        final String path = String.format(serverUrls.getDataUrl(), id);
         final ResponseEntity<CreateSensorDataResponse> response = restTemplate
                 .postForEntity(path, createSensorDataRequest,
                         CreateSensorDataResponse.class);

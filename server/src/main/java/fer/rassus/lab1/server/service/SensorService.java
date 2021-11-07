@@ -1,5 +1,7 @@
 package fer.rassus.lab1.server.service;
 
+import fer.rassus.lab1.server.dto.CreateRegistrationRequest;
+import fer.rassus.lab1.server.dto.CreateSensorDataRequest;
 import fer.rassus.lab1.server.entity.Sensor;
 import fer.rassus.lab1.server.entity.SensorReading;
 
@@ -7,7 +9,7 @@ import java.util.List;
 
 public interface SensorService {
 
-    Sensor registerSensor(Sensor sensor);
+    Sensor registerSensor(CreateRegistrationRequest registrationRequest);
 
     Sensor findNeighbour(Long id);
 
@@ -15,7 +17,7 @@ public interface SensorService {
 
     List<Sensor> getAllSensors();
 
-    SensorReading saveSensorReading(SensorReading sensorReading, Long sensorId);
+    SensorReading saveSensorReading(CreateSensorDataRequest sensorData, Long sensorId);
 
     List<SensorReading> getSensorReadings(Long sensorId);
 

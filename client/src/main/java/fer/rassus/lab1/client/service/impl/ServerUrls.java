@@ -8,9 +8,12 @@ public class ServerUrls {
 
     private final String neighbourUrl;
 
+    private final String dataUrl;
+
     public ServerUrls(ServerProperties serverProperties) {
-        this.registerUrl = serverProperties.getUrl() + "/sensor";
+        this.registerUrl = serverProperties.getUrl() + "sensor";
         this.neighbourUrl = serverProperties.getUrl() + "%s/neighbour";
+        this.dataUrl = serverProperties.getUrl() + "sensor/%s";
     }
 
     public String getRegisterUrl() {
@@ -19,5 +22,9 @@ public class ServerUrls {
 
     public String getNeighbourUrl() {
         return neighbourUrl;
+    }
+
+    public String getDataUrl() {
+        return dataUrl;
     }
 }

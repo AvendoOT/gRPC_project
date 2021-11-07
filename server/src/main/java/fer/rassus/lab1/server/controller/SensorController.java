@@ -1,4 +1,6 @@
 package fer.rassus.lab1.server.controller;
+import fer.rassus.lab1.server.dto.CreateRegistrationRequest;
+import fer.rassus.lab1.server.dto.CreateSensorDataRequest;
 import fer.rassus.lab1.server.entity.Sensor;
 import fer.rassus.lab1.server.entity.SensorReading;
 import fer.rassus.lab1.server.service.SensorService;
@@ -29,8 +31,8 @@ public class SensorController {
     }
 
     @PostMapping
-    public ResponseEntity<Void> registerSensor(@RequestBody Sensor sensor) {
-        final Sensor savedSensor = sensorService.registerSensor(sensor);
+    public ResponseEntity<Void> registerSensor(@RequestBody CreateRegistrationRequest registrationRequest) {
+        final Sensor savedSensor = sensorService.registerSensor(registrationRequest);
 
         final URI sensorUrl = UriComponentsBuilder.newInstance()
             .scheme("http")
@@ -68,8 +70,8 @@ public class SensorController {
     }
 
     @PostMapping("/{id}")
-    public ResponseEntity<Void> saveSensorData(@RequestBody SensorReading sensorReading, @PathVariable Long id) {
-        final SensorReading savedSensorReading = sensorService.saveSensorReading(sensorReading, id);
+    public ResponseEntity<Void> saveSensorData(@RequestBody CreateSensorDataRequest sensorData, @PathVariable Long id) {
+        final SensorReading savedSensorReading = sensorService.saveSensorReading(sensorData, id);
 
         final URI sensorReadingUrl = UriComponentsBuilder.newInstance()
             .scheme("http")

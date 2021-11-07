@@ -1,11 +1,14 @@
 package fer.rassus.lab1.server.service.impl;
 
+import fer.rassus.lab1.server.dto.CreateRegistrationRequest;
+import fer.rassus.lab1.server.dto.CreateSensorDataRequest;
 import fer.rassus.lab1.server.entity.Sensor;
 import fer.rassus.lab1.server.entity.SensorReading;
 import fer.rassus.lab1.server.exception.EntityNotFoundException;
 import fer.rassus.lab1.server.repository.SensorReadingRepository;
 import fer.rassus.lab1.server.repository.SensorRepository;
 import fer.rassus.lab1.server.service.SensorService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +18,7 @@ import java.util.Optional;
 @Service
 public class SensorServiceImpl implements SensorService {
 
+    private final ModelMapper modelMapper = new ModelMapper();
     private final SensorRepository sensorRepository;
     private final SensorReadingRepository sensorReadingRepository;
 
@@ -27,7 +31,8 @@ public class SensorServiceImpl implements SensorService {
     }
 
     @Override
-    public Sensor registerSensor(Sensor sensor) {
+    public Sensor registerSensor(CreateRegistrationRequest registrationRequest) {
+        final Sensor sensor = modelMapper.map(registrationRequest, Sensor.class);
         return sensorRepository.save(sensor);
     }
 
@@ -89,8 +94,9 @@ public class SensorServiceImpl implements SensorService {
     }
 
     @Override
-    public SensorReading saveSensorReading(SensorReading sensorReading, Long sensorId) {
+    public SensorReading saveSensorReading(CreateSensorDataRequest sensorData, Long sensorId) {
         final Sensor sensor = getSensor(sensorId);
+        final SensorReading sensorReading = modelMapper.map(sensorData, SensorReading.class);
         sensorReading.setSensor(sensor);
 
         return sensorReadingRepository.save(sensorReading);
