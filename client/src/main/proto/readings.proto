@@ -7,12 +7,10 @@ package fer.rassus.lab1;
 
 service SensorReading {
     // Sends a greeting
-    rpc SensorRequestReading (SensorReadingRequest) returns (SensorReadingResponse) {}
+    rpc SensorRequestMessageReading (SensorReadingMessageResponse) returns (SensorReadingMessageResponse) {}
 }
 
-message SensorReadingRequest {}
-
-message SensorReadingResponse {
+message SensorReadingMessageResponse {
     float temperature = 1;
     float pressure = 2;
     float humidity = 3;

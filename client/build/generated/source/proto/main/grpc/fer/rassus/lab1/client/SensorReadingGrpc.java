@@ -15,35 +15,35 @@ public final class SensorReadingGrpc {
   public static final String SERVICE_NAME = "fer.rassus.lab1.SensorReading";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<fer.rassus.lab1.client.SensorReadingRequest,
-      fer.rassus.lab1.client.SensorReadingResponse> getSensorRequestReadingMethod;
+  private static volatile io.grpc.MethodDescriptor<fer.rassus.lab1.client.SensorReadingMessageResponse,
+      fer.rassus.lab1.client.SensorReadingMessageResponse> getSensorRequestMessageReadingMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "SensorRequestReading",
-      requestType = fer.rassus.lab1.client.SensorReadingRequest.class,
-      responseType = fer.rassus.lab1.client.SensorReadingResponse.class,
+      fullMethodName = SERVICE_NAME + '/' + "SensorRequestMessageReading",
+      requestType = fer.rassus.lab1.client.SensorReadingMessageResponse.class,
+      responseType = fer.rassus.lab1.client.SensorReadingMessageResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fer.rassus.lab1.client.SensorReadingRequest,
-      fer.rassus.lab1.client.SensorReadingResponse> getSensorRequestReadingMethod() {
-    io.grpc.MethodDescriptor<fer.rassus.lab1.client.SensorReadingRequest, fer.rassus.lab1.client.SensorReadingResponse> getSensorRequestReadingMethod;
-    if ((getSensorRequestReadingMethod = SensorReadingGrpc.getSensorRequestReadingMethod) == null) {
+  public static io.grpc.MethodDescriptor<fer.rassus.lab1.client.SensorReadingMessageResponse,
+      fer.rassus.lab1.client.SensorReadingMessageResponse> getSensorRequestMessageReadingMethod() {
+    io.grpc.MethodDescriptor<fer.rassus.lab1.client.SensorReadingMessageResponse, fer.rassus.lab1.client.SensorReadingMessageResponse> getSensorRequestMessageReadingMethod;
+    if ((getSensorRequestMessageReadingMethod = SensorReadingGrpc.getSensorRequestMessageReadingMethod) == null) {
       synchronized (SensorReadingGrpc.class) {
-        if ((getSensorRequestReadingMethod = SensorReadingGrpc.getSensorRequestReadingMethod) == null) {
-          SensorReadingGrpc.getSensorRequestReadingMethod = getSensorRequestReadingMethod =
-              io.grpc.MethodDescriptor.<fer.rassus.lab1.client.SensorReadingRequest, fer.rassus.lab1.client.SensorReadingResponse>newBuilder()
+        if ((getSensorRequestMessageReadingMethod = SensorReadingGrpc.getSensorRequestMessageReadingMethod) == null) {
+          SensorReadingGrpc.getSensorRequestMessageReadingMethod = getSensorRequestMessageReadingMethod =
+              io.grpc.MethodDescriptor.<fer.rassus.lab1.client.SensorReadingMessageResponse, fer.rassus.lab1.client.SensorReadingMessageResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SensorRequestReading"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SensorRequestMessageReading"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fer.rassus.lab1.client.SensorReadingRequest.getDefaultInstance()))
+                  fer.rassus.lab1.client.SensorReadingMessageResponse.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fer.rassus.lab1.client.SensorReadingResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new SensorReadingMethodDescriptorSupplier("SensorRequestReading"))
+                  fer.rassus.lab1.client.SensorReadingMessageResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new SensorReadingMethodDescriptorSupplier("SensorRequestMessageReading"))
               .build();
         }
       }
     }
-    return getSensorRequestReadingMethod;
+    return getSensorRequestMessageReadingMethod;
   }
 
   /**
@@ -99,20 +99,20 @@ public final class SensorReadingGrpc {
      * Sends a greeting
      * </pre>
      */
-    public void sensorRequestReading(fer.rassus.lab1.client.SensorReadingRequest request,
-        io.grpc.stub.StreamObserver<fer.rassus.lab1.client.SensorReadingResponse> responseObserver) {
-      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSensorRequestReadingMethod(), responseObserver);
+    public void sensorRequestMessageReading(fer.rassus.lab1.client.SensorReadingMessageResponse request,
+        io.grpc.stub.StreamObserver<fer.rassus.lab1.client.SensorReadingMessageResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSensorRequestMessageReadingMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getSensorRequestReadingMethod(),
+            getSensorRequestMessageReadingMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                fer.rassus.lab1.client.SensorReadingRequest,
-                fer.rassus.lab1.client.SensorReadingResponse>(
-                  this, METHODID_SENSOR_REQUEST_READING)))
+                fer.rassus.lab1.client.SensorReadingMessageResponse,
+                fer.rassus.lab1.client.SensorReadingMessageResponse>(
+                  this, METHODID_SENSOR_REQUEST_MESSAGE_READING)))
           .build();
     }
   }
@@ -136,10 +136,10 @@ public final class SensorReadingGrpc {
      * Sends a greeting
      * </pre>
      */
-    public void sensorRequestReading(fer.rassus.lab1.client.SensorReadingRequest request,
-        io.grpc.stub.StreamObserver<fer.rassus.lab1.client.SensorReadingResponse> responseObserver) {
+    public void sensorRequestMessageReading(fer.rassus.lab1.client.SensorReadingMessageResponse request,
+        io.grpc.stub.StreamObserver<fer.rassus.lab1.client.SensorReadingMessageResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
-          getChannel().newCall(getSensorRequestReadingMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getSensorRequestMessageReadingMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -162,9 +162,9 @@ public final class SensorReadingGrpc {
      * Sends a greeting
      * </pre>
      */
-    public fer.rassus.lab1.client.SensorReadingResponse sensorRequestReading(fer.rassus.lab1.client.SensorReadingRequest request) {
+    public fer.rassus.lab1.client.SensorReadingMessageResponse sensorRequestMessageReading(fer.rassus.lab1.client.SensorReadingMessageResponse request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
-          getChannel(), getSensorRequestReadingMethod(), getCallOptions(), request);
+          getChannel(), getSensorRequestMessageReadingMethod(), getCallOptions(), request);
     }
   }
 
@@ -187,14 +187,14 @@ public final class SensorReadingGrpc {
      * Sends a greeting
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<fer.rassus.lab1.client.SensorReadingResponse> sensorRequestReading(
-        fer.rassus.lab1.client.SensorReadingRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<fer.rassus.lab1.client.SensorReadingMessageResponse> sensorRequestMessageReading(
+        fer.rassus.lab1.client.SensorReadingMessageResponse request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
-          getChannel().newCall(getSensorRequestReadingMethod(), getCallOptions()), request);
+          getChannel().newCall(getSensorRequestMessageReadingMethod(), getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_SENSOR_REQUEST_READING = 0;
+  private static final int METHODID_SENSOR_REQUEST_MESSAGE_READING = 0;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -213,9 +213,9 @@ public final class SensorReadingGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_SENSOR_REQUEST_READING:
-          serviceImpl.sensorRequestReading((fer.rassus.lab1.client.SensorReadingRequest) request,
-              (io.grpc.stub.StreamObserver<fer.rassus.lab1.client.SensorReadingResponse>) responseObserver);
+        case METHODID_SENSOR_REQUEST_MESSAGE_READING:
+          serviceImpl.sensorRequestMessageReading((fer.rassus.lab1.client.SensorReadingMessageResponse) request,
+              (io.grpc.stub.StreamObserver<fer.rassus.lab1.client.SensorReadingMessageResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -278,7 +278,7 @@ public final class SensorReadingGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new SensorReadingFileDescriptorSupplier())
-              .addMethod(getSensorRequestReadingMethod())
+              .addMethod(getSensorRequestMessageReadingMethod())
               .build();
         }
       }

@@ -15,15 +15,10 @@ public final class Readings {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fer_rassus_lab1_SensorReadingRequest_descriptor;
+    internal_static_fer_rassus_lab1_SensorReadingMessageResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fer_rassus_lab1_SensorReadingRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_fer_rassus_lab1_SensorReadingResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_fer_rassus_lab1_SensorReadingResponse_fieldAccessorTable;
+      internal_static_fer_rassus_lab1_SensorReadingMessageResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -33,31 +28,25 @@ public final class Readings {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016readings.proto\022\017fer.rassus.lab1\"\026\n\024Sen" +
-      "sorReadingRequest\"v\n\025SensorReadingRespon" +
-      "se\022\023\n\013temperature\030\001 \001(\002\022\020\n\010pressure\030\002 \001(" +
-      "\002\022\020\n\010humidity\030\003 \001(\002\022\n\n\002co\030\004 \001(\002\022\013\n\003so2\030\005" +
-      " \001(\002\022\013\n\003no2\030\006 \001(\0022x\n\rSensorReading\022g\n\024Se" +
-      "nsorRequestReading\022%.fer.rassus.lab1.Sen" +
-      "sorReadingRequest\032&.fer.rassus.lab1.Sens" +
-      "orReadingResponse\"\000B\032\n\026fer.rassus.lab1.c" +
-      "lientP\001b\006proto3"
+      "\n\016readings.proto\022\017fer.rassus.lab1\"}\n\034Sen" +
+      "sorReadingMessageResponse\022\023\n\013temperature" +
+      "\030\001 \001(\002\022\020\n\010pressure\030\002 \001(\002\022\020\n\010humidity\030\003 \001" +
+      "(\002\022\n\n\002co\030\004 \001(\002\022\013\n\003so2\030\005 \001(\002\022\013\n\003no2\030\006 \001(\002" +
+      "2\216\001\n\rSensorReading\022}\n\033SensorRequestMessa" +
+      "geReading\022-.fer.rassus.lab1.SensorReadin" +
+      "gMessageResponse\032-.fer.rassus.lab1.Senso" +
+      "rReadingMessageResponse\"\000B\032\n\026fer.rassus." +
+      "lab1.clientP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_fer_rassus_lab1_SensorReadingRequest_descriptor =
+    internal_static_fer_rassus_lab1_SensorReadingMessageResponse_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_fer_rassus_lab1_SensorReadingRequest_fieldAccessorTable = new
+    internal_static_fer_rassus_lab1_SensorReadingMessageResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fer_rassus_lab1_SensorReadingRequest_descriptor,
-        new java.lang.String[] { });
-    internal_static_fer_rassus_lab1_SensorReadingResponse_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_fer_rassus_lab1_SensorReadingResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_fer_rassus_lab1_SensorReadingResponse_descriptor,
+        internal_static_fer_rassus_lab1_SensorReadingMessageResponse_descriptor,
         new java.lang.String[] { "Temperature", "Pressure", "Humidity", "Co", "So2", "No2", });
   }
 

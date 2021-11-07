@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8090
   host-name: localhost
 
 rassus:

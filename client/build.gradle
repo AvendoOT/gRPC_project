@@ -69,5 +69,5 @@ task runExampleServer(type: JavaExec) {
     group = "exec"
     description = "Run client with JavaExecTask"
     classpath = sourceSets.main.runtimeClasspath
-    mainClass = "hr.fer.tel.rassus.examples.SimpleUnaryRPCServer"
+    mainClass = "fer.rassus.lab1.client.Server"
 }

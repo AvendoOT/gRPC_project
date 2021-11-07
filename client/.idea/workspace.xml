@@ -20,8 +20,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eab3fd4-648d-47cd-952e-45c72c01afbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/Readings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/Readings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$MethodHandlers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingBlockingStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingFutureStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingImplBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc$SensorReadingStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingGrpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingRequest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingRequest$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingRequestOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingResponse$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingResponse$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fer/rassus/lab1/client/SensorReadingResponseOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/extracted-include-protos/test/readings.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/extracted-include-protos/test/readings.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/grpc/fer/rassus/lab1/client/SensorReadingGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/source/proto/main/grpc/fer/rassus/lab1/client/SensorReadingGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/Readings.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/Readings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/SensorReadingRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/SensorReadingRequestOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/SensorReadingResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/source/proto/main/java/fer/rassus/lab1/client/SensorReadingResponseOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/client-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/readings.proto" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/readings.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/ReceiveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fer/rassus/lab1/client/service/ReceiveService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/readings.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/readings.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/ServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/ServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/service/impl/GRpcServerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/classes/java/main/fer/rassus/lab1/server/service/impl/GRpcServerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../server/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +122,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../grga/rassus-webclient-grpc-ela" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -93,7 +145,33 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.client [build]">
+  <component name="RunManager" selected="Application.Server">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fer.rassus.lab1.client.service.Client" />
+      <module name="client.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fer.rassus.lab1.client.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fer.rassus.lab1.client.Server" />
+      <module name="client.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fer.rassus.lab1.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="client [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,6 +219,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Gradle.client [build]" />
         <item itemvalue="Gradle.client [clean]" />
       </list>
@@ -157,7 +237,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636286630994</updated>
       <workItem from="1636286634302" duration="2302000" />
-      <workItem from="1636289081488" duration="4430000" />
+      <workItem from="1636289081488" duration="9206000" />
     </task>
     <servers />
   </component>
@@ -180,34 +260,34 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="768" y="238" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1636294444472">
+    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1636299939264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="768" y="238" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636294444472" />
+    <state x="768" y="238" width="380" height="562" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636299939264" />
     <state x="693" y="267" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1636293141543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="693" y="267" width="524" height="504" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636293141543" />
-    <state x="735" y="277" key="FileChooserDialogImpl" timestamp="1636289085593">
+    <state x="735" y="277" key="FileChooserDialogImpl" timestamp="1636299451705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="735" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1636289085593" />
-    <state width="1870" height="272" key="GridCell.Tab.0.bottom" timestamp="1636293784308">
+    <state x="735" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1636299451705" />
+    <state width="1870" height="410" key="GridCell.Tab.0.bottom" timestamp="1636300245791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636293784308" />
-    <state width="1870" height="272" key="GridCell.Tab.0.center" timestamp="1636293784306">
+    <state width="1870" height="410" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636300245791" />
+    <state width="1870" height="410" key="GridCell.Tab.0.center" timestamp="1636300245791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="272" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636293784306" />
-    <state width="1870" height="272" key="GridCell.Tab.0.left" timestamp="1636293784305">
+    <state width="1870" height="410" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636300245791" />
+    <state width="1870" height="410" key="GridCell.Tab.0.left" timestamp="1636300245790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="272" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636293784305" />
-    <state width="1870" height="272" key="GridCell.Tab.0.right" timestamp="1636293784307">
+    <state width="1870" height="410" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636300245790" />
+    <state width="1870" height="410" key="GridCell.Tab.0.right" timestamp="1636300245791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="272" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636293784307" />
+    <state width="1870" height="410" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636300245791" />
     <state width="1870" height="336" key="GridCell.Tab.1.bottom" timestamp="1636286898222">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -224,9 +304,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1870" height="336" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636286898222" />
-    <state x="624" y="236" width="672" height="677" key="run.anything.popup" timestamp="1636293722853">
+    <state x="634" y="236" width="652" height="566" key="find.popup" timestamp="1636299264911">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="624" y="236" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636293722853" />
+    <state x="634" y="236" width="652" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636299264911" />
+    <state x="624" y="236" width="672" height="677" key="run.anything.popup" timestamp="1636300144172">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="624" y="236" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636300144172" />
   </component>
 </project>
