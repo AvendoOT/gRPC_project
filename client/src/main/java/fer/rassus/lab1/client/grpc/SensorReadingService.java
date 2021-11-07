@@ -25,15 +25,13 @@ public class SensorReadingService extends SensorReadingServiceGrpc.SensorReading
           SensorReadingRequest request, StreamObserver<SensorReadingResponse> responseObserver
   ) {
 
-    // Create response
     SensorReadingResponse response = sensorReadingFileService.getSensorReading();
 
-    // Send response
     responseObserver.onNext(
             response
     );
 
-    logger.info("Responding with: " + response.getCo());
+    logger.info("Responding data");
     responseObserver.onCompleted();
   }
 }

@@ -44,44 +44,6 @@ public class SensorServiceImpl implements SensorService {
             () -> new EntityNotFoundException("Sensors other than sensor with id " + id));
     }
 
-    private Optional<Sensor> findNeighbour(Sensor requesterSensor) {
-        final List<Sensor> allSensors = sensorRepository.findAll();
-        allSensors.remove(requesterSensor);
-
-        if (allSensors.isEmpty()) {
-            return Optional.empty();
-        }
-
-        double minDistance = Double.MAX_VALUE;
-        Sensor minDistanceSensor = null;
-
-        for (Sensor sensor : allSensors) {
-            double sensorDistance = distance(requesterSensor, sensor);
-
-            if (sensorDistance < minDistance) {
-                minDistance = sensorDistance;
-                minDistanceSensor = sensor;
-            }
-        }
-
-        return Optional.of(minDistanceSensor);
-    }
-
-    private double distance(Sensor sensor1, Sensor sensor2) {
-        double lat1 = sensor1.getLatitude();
-        double lat2 = sensor2.getLatitude();
-        double lon1 = sensor1.getLongitude();
-        double lon2 = sensor2.getLatitude();
-
-        double dLon = lon2 - lon1;
-        double dLat = lat2 - lat1;
-
-        double a = Math.pow(Math.sin(dLat / 2), 2) +
-            Math.cos(lat1) * Math.cos(lat2) * Math.pow(Math.sin(dLon / 2), 2);
-
-        return 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)) * EARTH_RADIUS;
-    }
-
     @Override
     public Sensor getSensor(Long id) {
         return sensorRepository.findById(id)
@@ -104,14 +66,45 @@ public class SensorServiceImpl implements SensorService {
 
     @Override
     public List<SensorReading> getSensorReadings(Long sensorId) {
-        final Sensor sensor = getSensor(sensorId);
-        return sensor.getSensorReadingList();
+        return getSensor(sensorId).getSensorReadingList();
     }
 
-    @Override
-    public SensorReading getSensorReading(Long id) {
-        return sensorReadingRepository.findById(id)
-            .orElseThrow(() -> new EntityNotFoundException("Sensor reading with id " + id));
+    private Optional<Sensor> findNeighbour(Sensor requesterSensor) {
+        final List<Sensor> sensors = sensorRepository.findAll();
+        sensors.remove(requesterSensor);
+
+        if (sensors.isEmpty()) {
+            return Optional.empty();
+        }
+
+        double minDistance = Double.MAX_VALUE;
+        Sensor minDistanceSensor = null;
+
+        for (Sensor sensor : sensors) {
+            double sensorDistance = distance(requesterSensor, sensor);
+
+            if (sensorDistance < minDistance) {
+                minDistance = sensorDistance;
+                minDistanceSensor = sensor;
+            }
+        }
+
+        return Optional.of(minDistanceSensor);
+    }
+
+    private double distance(Sensor sensor1, Sensor sensor2) {
+        double lat1 = sensor1.getLatitude();
+        double lat2 = sensor2.getLatitude();
+        double lon1 = sensor1.getLongitude();
+        double lon2 = sensor2.getLatitude();
+
+        double dLon = lon2 - lon1;
+        double dLat = lat2 - lat1;
+
+        double a = Math.pow(Math.sin(dLat / 2), 2) +
+                Math.cos(lat1) * Math.cos(lat2) * Math.pow(Math.sin(dLon / 2), 2);
+
+        return 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)) * EARTH_RADIUS;
     }
 
 }

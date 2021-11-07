@@ -12,5 +12,5 @@ public interface ClientService {
 
     Optional<CreateRegistrationRequest> getNeighbour(String id);
 
-    CreateSensorDataResponse saveSensorData(String id, CreateSensorDataRequest createSensorDataRequest);
+    void saveSensorData(String id, CreateSensorDataRequest createSensorDataRequest);
 }

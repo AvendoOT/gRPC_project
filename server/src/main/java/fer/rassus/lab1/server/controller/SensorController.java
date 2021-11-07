@@ -49,19 +49,9 @@ public class SensorController {
         return sensorService.findNeighbour(id);
     }
 
-    @GetMapping("/{id}")
-    public Sensor getSensor(@PathVariable Long id) {
-        return sensorService.getSensor(id);
-    }
-
     @GetMapping("/{id}/readings")
     public List<SensorReading> getSensorReadings(@PathVariable Long id) {
         return sensorService.getSensorReadings(id);
-    }
-
-    @GetMapping("/sensorReading/{id}")
-    public SensorReading getSensorReading(@PathVariable Long id) {
-        return sensorService.getSensorReading(id);
     }
 
     @GetMapping("/all")

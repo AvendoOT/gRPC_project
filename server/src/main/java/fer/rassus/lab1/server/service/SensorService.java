@@ -20,6 +20,4 @@ public interface SensorService {
     SensorReading saveSensorReading(CreateSensorDataRequest sensorData, Long sensorId);
 
     List<SensorReading> getSensorReadings(Long sensorId);
-
-    SensorReading getSensorReading(Long id);
 }

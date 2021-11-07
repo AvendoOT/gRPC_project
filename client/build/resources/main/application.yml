@@ -1,6 +1,5 @@
 server:
   port: 8085
-  client-port: 8080
 
 rassus:
   server:

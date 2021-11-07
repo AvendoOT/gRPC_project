@@ -17,7 +17,7 @@ public class SensorReadingServer {
   private Server server;
   private final SensorReadingService service;
 
-  @Value("${server.client-port}")
+  @Value("${server.port}")
   private int port;
 
   @Autowired

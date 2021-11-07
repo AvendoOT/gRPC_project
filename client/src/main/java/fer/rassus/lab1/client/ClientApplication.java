@@ -1,9 +1,11 @@
 package fer.rassus.lab1.client;
 
+import fer.rassus.lab1.client.exception.RegistrationFailedException;
 import fer.rassus.lab1.client.grpc.SensorReadingServer;
 import fer.rassus.lab1.client.service.ClientService;
-import fer.rassus.lab1.client.service.NeighbourSensor;
+import fer.rassus.lab1.client.service.impl.NeighbourSensor;
 import fer.rassus.lab1.client.service.request.CreateRegistrationRequest;
+import fer.rassus.lab1.client.service.request.CurrentSensorInfo;
 import fer.rassus.lab1.client.util.CreateRegistrationGeneratingUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -24,12 +26,14 @@ public class ClientApplication {
     private final SensorReadingServer server;
     private final ClientService clientService;
     private final NeighbourSensor neighbourSensor;
+    private final CurrentSensorInfo currentSensorInfo;
 
     @Autowired
-    public ClientApplication(SensorReadingServer server, ClientService clientService, NeighbourSensor neighbourSensor) {
+    public ClientApplication(SensorReadingServer server, ClientService clientService, NeighbourSensor neighbourSensor, CurrentSensorInfo currentSensorInfo) {
         this.server = server;
         this.clientService = clientService;
         this.neighbourSensor = neighbourSensor;
+        this.currentSensorInfo = currentSensorInfo;
     }
 
     public static void main(String[] args) {
@@ -39,11 +43,21 @@ public class ClientApplication {
     @EventListener(ApplicationReadyEvent.class)
     public void startServer() throws IOException, InterruptedException {
         final CreateRegistrationGeneratingUtil createRegistrationGeneratingUtil = new CreateRegistrationGeneratingUtil();
-        long id = clientService.register(createRegistrationGeneratingUtil.generateRegistrationRequest());
-        Optional<CreateRegistrationRequest> sensorInfo = clientService.getNeighbour(String.valueOf(id));
-        neighbourSensor.updateInformation(sensorInfo);
-        logger.info(neighbourSensor.getHost());
-        logger.info(neighbourSensor.getPort() + "");
+        final long id;
+
+        try {
+            id = clientService.register(createRegistrationGeneratingUtil.generateRegistrationRequest());
+        } catch (RegistrationFailedException e) {
+            logger.info("Registration failed");
+            return;
+        }
+
+        currentSensorInfo.setId(id);
+        Optional<CreateRegistrationRequest> neighbour = clientService.getNeighbour(String.valueOf(id));
+        neighbourSensor.updateInformation(neighbour);
+
+        server.start();
+        server.blockUntilShutdown();
     }
 
 }

@@ -14,6 +14,18 @@ public class CreateSensorDataRequest {
 
     private Double so2;
 
+    public CreateSensorDataRequest() {
+    }
+
+    public CreateSensorDataRequest(Double temperature, Double pressure, Double humidity, Double co, Double no2, Double so2) {
+        this.temperature = temperature;
+        this.pressure = pressure;
+        this.humidity = humidity;
+        this.co = co;
+        this.no2 = no2;
+        this.so2 = so2;
+    }
+
     public Double getTemperature() {
         return temperature;
     }
